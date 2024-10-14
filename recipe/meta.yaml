@@ -9,7 +9,7 @@ source:
   sha256: aff70530a31c2b91eaf9d1027b56a2920604280fa6b03dc27af41b14de2ac558
 
 build:
-  number: 0
+  number: 1
   script:
     - >
       cmake -S . -B build
@@ -31,10 +31,14 @@ requirements:
     - make
   host:
     - zlib
+  run:
+    - bioconda::libcifpp
 
 test:
   commands:
-    - mkdssp --version
+    - mkdssp 1aki.cif 1aki_dssp.cif
+  files:
+    - 1aki.cif
 
 about:
   home: https://github.com/PDB-REDO/dssp
