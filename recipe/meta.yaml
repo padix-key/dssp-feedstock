@@ -31,8 +31,6 @@ requirements:
     - make
   host:
     - zlib
-  run:
-    - bioconda::libcifpp
 
 test:
   commands:
