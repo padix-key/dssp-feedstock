@@ -1,4 +1,4 @@
-{% set version = "4.4.8" %}
+{% set version = "4.4.11" %}
 
 package:
   name: dssp
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/PDB-REDO/dssp/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: aff70530a31c2b91eaf9d1027b56a2920604280fa6b03dc27af41b14de2ac558
+  sha256: 49dd6560358ba65fb971e158f78a54557ab6da1c49e502704b3bb9518e17acce
 
 build:
   number: 0
