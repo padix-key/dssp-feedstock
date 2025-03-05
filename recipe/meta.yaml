@@ -35,7 +35,7 @@ requirements:
 
 test:
   commands:
-    - mkdssp 1aki.cif 1aki_dssp.cif
+    - mkdssp 1aki.cif 1aki_dssp.cif --mmcif-dictionary $PREFIX/share/libcifpp/mmcif_pdbx.dic
   files:
     - 1aki.cif
 
